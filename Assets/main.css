@@ -73,7 +73,13 @@ header div .title {
     border: none;
     cursor: pointer;
     display: none;
+    color: #ffffff;
+    text-align: right;
+    justify-content: right;
     font-size: 24px;
+}
+.toggle-button:hover{
+    color: #fbbf24;
 }
 
 #navigation {
@@ -147,6 +153,9 @@ header div .title {
         font-size: 20px;
         color: #000;
     }
+    .project h2{
+        font-size: 70%;
+    }
 }
 nav {
     color: white;
@@ -216,6 +225,7 @@ section {
 
 .text {
     color: #e5e7eb; 
+    font-size: 95%;
 }
 
 #Big {
@@ -305,7 +315,9 @@ section {
     border-radius: 5px;
     margin-top: 1.35vh;
 }
-
+.project h2{
+    font-size: 97%;
+}
 .row h1 {
     margin-top: 29px;
     margin-bottom: 29px;
