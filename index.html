@@ -2,15 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="uft-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
     <title>Home Page</title>
     <link rel="preconnect" href="https://fonts.google.leapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.google.com/?category=Sans+Serif">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="Assets/css/all.min.css">
     <link rel="stylesheet" href="Assets/main.css" media="all">
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.common.min.css">
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.default.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2018.3.1017/js/kendo.all.min.js"></script>
 </head>
 
 <body>
@@ -23,15 +27,13 @@
                         <h1>Zacharias Zachariadis</h1>
 
                     </div>
-                    <nav>
+                    <button class="toggle-button" id="menu-toggle"><span class="k-icon k-i-menu"></span></button>
+                    <nav id="navigation">
                         <ul>
-                            <li><a href="https://www.instagram.com/zack_zachariadis/"><i
-                                        class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="https://twitter.com/ZachariasZacha9"><i class="fa-brands fa-twitter"></i></a>
-                            </li>
+                            <li><a href="https://www.instagram.com/zack_zachariadis/"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/zack.zachariadis/"><i class="fa-brands fa-facebook"></i></a></li>
                             <li><a href="https://github.com/Zack-Z23"><i class="fa-brands fa-github"></i></a></li>
                         </ul>
-
                     </nav>
                 </div>
                 <hr>
@@ -107,7 +109,11 @@
     
     <script>
         document.getElementById('scroll-down').addEventListener('click', function () {
-            document.getElementById('aboutSec').scrollIntoView({ behavior: "smooth" });
+        document.getElementById('aboutSec').scrollIntoView({ behavior: "smooth" });
+        });
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const navigation = document.getElementById('navigation');
+            navigation.classList.toggle('active');
         });
     </script>
 </body>

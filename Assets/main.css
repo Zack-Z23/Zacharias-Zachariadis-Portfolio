@@ -46,7 +46,7 @@ header div .title {
 }
 
 .banner {
-    height: 94.2vh;
+    height: 100vh;
     text-align: center;
     display: flex;
     align-items: center;
@@ -68,7 +68,86 @@ header div .title {
     border-top: 3px solid #fbbf24; 
     border-radius: 20px;
 }
+.toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    font-size: 24px;
+}
 
+#navigation {
+    display: flex;
+}
+
+#navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+#navigation ul li {
+    display: inline;
+}
+
+@media (max-width: 768px) {
+    .toggle-button {
+        display: block;
+    }
+
+    #navigation {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        padding: 10px;
+        
+        border-radius: 5px;
+        z-index: 1000;
+    }
+
+    #navigation ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    #navigation ul li {
+        margin: 0;
+    }
+
+    #navigation.active {
+        display: flex;
+    }
+
+    #navigation a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s, background-color 0.2s;
+    }
+
+    #navigation a:hover {
+        transform: scale(1.1);
+        background-color: #f0f0f0;
+    }
+
+    #navigation i {
+        font-size: 20px;
+        color: #000;
+    }
+}
 nav {
     color: white;
     text-align: right;
@@ -91,7 +170,7 @@ nav ul li {
 
 nav ul li a {
     font-size: 18px;
-    color: #ffffff; /* White links for visibility */
+    color: #ffffff; 
     font-weight: 100;
     line-height: 56px;
     letter-spacing: 0.4px;
@@ -201,7 +280,7 @@ section {
 .project {
     margin: 0 auto;
     display: flex;
-    width: calc(28% - 12.5px);
+    width: calc(25% - 12.65px);
     height: 260px;
     margin-top: 70px;
     margin-bottom: 70px;
@@ -213,6 +292,7 @@ section {
     text-align: center;
     flex-direction: row;
     transition: transform 0.3s, box-shadow 0.3s;
+    padding-bottom: 20px;
 }
 
 .project:hover {
