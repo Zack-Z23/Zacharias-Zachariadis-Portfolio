@@ -1,121 +1,78 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index, follow">
-    <title>Home Page</title>
-    <link rel="preconnect" href="https://fonts.google.leapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="Assets/css/all.min.css">
-    <link rel="stylesheet" href="Assets/main.css" media="all">
-    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.common.min.css">
-    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.default.min.css">
-    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-    <script src="https://kendo.cdn.telerik.com/2018.3.1017/js/kendo.all.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zacharias Zachariadis Portfolio</title>
+    <link rel="stylesheet" href="Assets/main.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="hero-banner">
-
-            <header>
-                <div class="container flexbox">
-                    <div class="title">
-                        <h1>Zacharias Zachariadis</h1>
-
-                    </div>
-                    <button class="toggle-button" id="menu-toggle"><span class="k-icon k-i-menu"></span></button>
-                    <nav id="navigation">
-                        <ul>
-                            <li><a href="https://www.instagram.com/zack_zachariadis/"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="https://www.facebook.com/zack.zachariadis/"><i class="fa-brands fa-facebook"></i></a></li>
-                            <li><a href="https://github.com/Zack-Z23"><i class="fa-brands fa-github"></i></a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <hr>
-            </header>
-
-            <div class="banner">
-                <br>
-                <h2>Zacharias Zachariadis</h2>
-                <br>
-                <hr>
-                <br>
-                <p>Welcome to my personal website! Feel free to explore and learn more about my journey, skills, and projects. I'm glad to have you here!</p>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Zacharias Zachariadis</h1>
+            <div class="menu-toggle">
+                <button class="hamburger" onclick="toggleMenu()" aria-label="Menu Toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <a id="scroll-down"></a>
-            </div>
-            <section id="aboutSec">
-                <div id="about">
-                    <div class="text">
-                        <h2 id="Big">Hi, I'm Zacharias Zachariadis.</h2>
-                        <h3>
-                            I’m currently pursuing a Computer Science degree at the University of Manitoba, where I’m developing expertise in full-stack development, data analysis, and system design. Over the years, I’ve worked on diverse projects involving both front-end and back-end technologies, honing my skills in SQL, Python, and creating scalable data architectures.
-            
-                            My passion for problem-solving and innovation has driven me to explore cloud computing and streamline ETL (Extract, Transform, Load) processes, ensuring data accuracy and reliability. I enjoy building user-friendly, visually appealing websites, leveraging modern frameworks to deliver seamless experiences.
-            
-                            Beyond coding, I thrive on learning new technologies and collaborating with others to bring impactful ideas to life. Whether it’s developing APIs, optimizing workflows, or contributing to cybersecurity initiatives, I’m always eager to tackle challenges and create meaningful solutions.
-            
-                            When I’m not immersed in code, you can find me exploring gaming, motorcycles, or experimenting with tech setups to enhance efficiency. Let’s connect and see how I can bring value to your next project or idea!
-                        </h3>
-                    </div>
-                </div>  
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Discover my work, projects, and experience in software development and design.</p>
+        <a href="#projects">View My Projects</a>
     </section>
-    </div>
-    <div class="above">
-        <h1>Previous Projects</h1>
-    </div>
-    <div class="row">
-        <section class="project">
-            <div class="col col-md-6">
-                <img src="Assets/img/Screenshot 2024-12-02 133228.png" alt="Screenshot of How2Games">
-                <br>
-                <h2>How2Games</h2>
-                <br>
-                <a class="input" href="https://github.com/Bearium-BB/How2Games" target="_blank">
-                    <input type="button" value="Visit">
-                </a>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p> I’m currently pursuing a Computer Science degree at the University of Manitoba, where I’m developing expertise in full-stack development, data analysis, and system design. Over the years, I’ve worked on diverse projects involving both front-end and back-end technologies, honing my skills in SQL, Python, and creating scalable data architectures.
+            
+            My passion for problem-solving and innovation has driven me to explore cloud computing and streamline ETL (Extract, Transform, Load) processes, ensuring data accuracy and reliability. I enjoy building user-friendly, visually appealing websites, leveraging modern frameworks to deliver seamless experiences.
+        </p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="Assets/img/how2games.png" alt="How2Games Project">
+                <h3><a href="https://github.com/Bearium-BB/How2Games">How2Games</a></h3>
+                <p>A gaming API-powered platform designed to provide comprehensive information about various games.</p>
             </div>
-        </section>
-    
-        <section class="project">
-            <div class="col col-md-6">
-                <img src="Assets/img/Screenshot 2024-11-27 142918.png" alt="Screenshot of Website Analysis Chatbot">
-                <br>
-                <h2>Website Analysis Chatbot</h2>
-                <br>
-                <a class="input" href="https://github.com/Zack-Z23/Website-Analysis-Chatbot" target="_blank">
-                    <input type="button" value="Visit">
-                </a>
+            <div class="project-card">
+                <img src="Assets/img/dev-team.png" alt="Dev Team Project">
+                <h3><a href="https://github.com/Zack-Z23/Dev-Team">DevTeam</a></h3>
+                <p>Developed a responsive website with some colleagues as a project.</p>
             </div>
-        </section>
-    
-        <section class="project">
-            <div class="col col-md-6">
-                <img src="Assets/img/Screenshot 2024-11-27 142420.png" alt="Screenshot of Dev-Team">
-                <br>
-                <h2>Dev-Team</h2>
-                <br>
-                <a class="input" href="https://github.com/Zack-Z23/Dev-Team" target="_blank">
-                    <input type="button" value="Visit">
-                </a>
+            <div class="project-card">
+                <img src="Assets/img/api-generator.png" alt="Fast API Generator">
+                <h3><a href="https://github.com/Zack-Z23/Website-Analysis-Chatbot">Fast API Generator</a></h3>
+                <p>A Python-based tool that dynamically generates questions from web-scraped content.</p>
             </div>
-        </section>
-    </div>
-    
-    <script>
-        document.getElementById('scroll-down').addEventListener('click', function () {
-        document.getElementById('aboutSec').scrollIntoView({ behavior: "smooth" });
-        });
-        document.getElementById('menu-toggle').addEventListener('click', function () {
-            const navigation = document.getElementById('navigation');
-            navigation.classList.toggle('active');
-        });
-    </script>
+        </div>
+    </section>
+    <section id="contact" class="about">
+        <h2>Contact Me</h2>
+        <p>
+            Feel free to reach out if you're interested in collaborating or learning more about my work. You can contact me via <a href="mailto:your-email@example.com">email</a> or connect with me on <a href="https://www.linkedin.com/in/zacharias-zachariadis" target="_blank">LinkedIn</a>.
+        </p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Zacharias Zachariadis. Built with passion and dedication.</p>
+    </footer>
+
+    <script src="Assets/script.js"></script>
 </body>
 
 </html>
