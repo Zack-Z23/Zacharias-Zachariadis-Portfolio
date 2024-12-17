@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,130 +7,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5; /* Light Gray for main background */
-    color: #333; /* Dark Gray for text */
-    line-height: 1.6;
-}
-
-/* Header Section */
-header {
-    background: white;
-    padding: 20px 10%;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-}
-
-header h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #1a244d; /* Dark Blue */
-}
-
-.nav-list {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-.nav-list li a {
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.nav-list li a:hover {
-    color: #1e90ff; /* Light Blue Highlight */
-}
-
-/* Mobile Menu */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-    text-decoration: none;
-}
-
-/* Hero Section */
-.hero {
-    height: 100vh;
-    background: linear-gradient(135deg, #f5faff, #d9eaff); /* Light Blue Gradient */
-    color: #1a244d; /* Dark Blue */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.hero h2 {
-    font-size: 3.5rem;
-    font-weight: bold;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin: 20px 0;
-    color: #555;
-}
-
-.hero a {
-    display: inline-block;
-    background-color: #1a244d; 
-    color: #fff;
-    padding: 10px 20px;
-    font-weight: 700;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    text-decoration: none;
-}
-
-.hero a:hover {
-    background-color: #1e90ff;
-    transform: scale(1.05);
-}
-
-/* Section Styling */
-.about, .projects {
-    padding: 80px 10%;
-    text-align: center;
-    background-color: white; /* White background for separation */
-}
-
-.about h2, .projects h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #1a244d; /* Dark Blue */
-    margin-bottom: 20px;
-}
-
-.about p {
-    font-size: 1.1rem;
-    color: #555;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
-}
-
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5; /* Light Gray for main background */
-    color: #333; /* Dark Gray for text */
+    background-color: #f5f5f5; 
+    color: #333; 
     line-height: 1.6;
 }
 
@@ -156,13 +34,13 @@ header {
     margin: 0 auto;
 }
 
-/* Logo Styling */
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-/* Navigation Menu */
+
 .nav-menu {
     display: flex;
 }
@@ -181,11 +59,11 @@ header {
 }
 
 .nav-link:hover {
-    color: #1e90ff; /* Highlight color */
+    color: #1e90ff; 
 }
-/* Hamburger Button */
+
 .hamburger {
-    display: none; /* Hidden by default */
+    display: none; 
     flex-direction: column;
     gap: 5px;
     background: none;
@@ -197,11 +75,11 @@ header {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #1a90ff; /* Change this to the logo color */
+    background-color: #1a90ff;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
-/* Active state for Hamburger */
+
 .hamburger.open span:nth-child(1) {
     transform: rotate(45deg);
     position: relative;
@@ -219,7 +97,7 @@ header {
 }
 
 
-/* Hero Section */
+
 .hero {
     height: 100vh;
     background: linear-gradient(135deg, #f5faff, #d9eaff);
@@ -259,7 +137,7 @@ header {
     transform: scale(1.05);
 }
 
-/* Projects Section */
+
 .projects {
     padding: 60px 10%;
     background-color: #f9f9f9;
@@ -272,10 +150,10 @@ header {
     margin-bottom: 40px;
 }
 
-/* Card Layout for Projects */
+
 .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
@@ -324,7 +202,7 @@ header {
     margin-top: 10px;
 }
 
-/* Footer */
+
 footer {
     padding: 20px;
     background-color: #1a244d;
@@ -338,13 +216,13 @@ footer p {
 
 @media (max-width: 768px) {
     .hamburger {
-        display: flex; /* Show hamburger button */
+        display: flex; 
     }
 
     .nav-menu {
-        display: none; /* Hide nav menu initially */
+        display: none; 
         position: absolute;
-        top: 60px; /* Below the header */
+        top: 60px; 
         left: 0;
         background-color: #FFF;
         width: 100%;
@@ -355,7 +233,7 @@ footer p {
     }
 
     .nav-menu.active {
-        display: flex; /* Show when active */
+        display: flex; 
     }
 
     .nav-list {
