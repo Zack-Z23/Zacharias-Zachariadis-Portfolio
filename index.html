@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zacharias Zachariadis Portfolio</title>
+    <link rel="stylesheet" href="Assets/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Zacharias Zachariadis</h1>
+            <div class="menu-toggle">
+                <button class="hamburger" onclick="toggleMenu()" aria-label="Menu Toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Discover my work, projects, and experience in software development and design.</p>
+        <a href="#projects">View My Projects</a>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p> I’m currently pursuing a Computer Science degree at the University of Manitoba, where I’m developing expertise in full-stack development, data analysis, and system design. Over the years, I’ve worked on diverse projects involving both front-end and back-end technologies, honing my skills in SQL, Python, and creating scalable data architectures.
+            
+            My passion for problem-solving and innovation has driven me to explore cloud computing and streamline ETL (Extract, Transform, Load) processes, ensuring data accuracy and reliability. I enjoy building user-friendly, visually appealing websites, leveraging modern frameworks to deliver seamless experiences.
+        </p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="Assets/img/how2games.png" alt="How2Games Project">
+                <h3><a href="https://github.com/Bearium-BB/How2Games">How2Games</a></h3>
+                <p>A gaming API-powered platform designed to provide comprehensive information about various games.</p>
+            </div>
+            <div class="project-card">
+                <img src="Assets/img/dev-team.png" alt="Dev Team Project">
+                <h3><a href="https://github.com/Zack-Z23/Dev-Team">DevTeam</a></h3>
+                <p>Developed a responsive website with some colleagues as a project.</p>
+            </div>
+            <div class="project-card">
+                <img src="Assets/img/api-generator.png" alt="Fast API Generator">
+                <h3><a href="https://github.com/Zack-Z23/Website-Analysis-Chatbot">Fast API Generator</a></h3>
+                <p>A Python-based tool that dynamically generates questions from web-scraped content.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="about">
+        <h2>Contact Me</h2>
+        <p>
+            Feel free to reach out if you're interested in collaborating or learning more about my work. You can contact me via <a href="mailto:zack.zacharidis@gmail.com">email</a> or connect with me on <a href="https://www.linkedin.com/in/zacharias-zachariadis-26a1a7238/" target="_blank">LinkedIn</a>.
+        </p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Zacharias Zachariadis. Built with passion and dedication.</p>
+    </footer>
+
+    <script src="Assets/script.js"></script>
+</body>
+
+</html>
