@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zacharias Zachariadis Portfolio</title>
-    <link rel="stylesheet" href="Assets/main.css">
+    <link rel="stylesheet" href="Assets/main.css?v=4">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
@@ -30,81 +31,118 @@
         </div>
     </header>
     
-    <section class="hero">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Discover my work, projects, and experience in software development and design.</p>
-        <a href="#projects">View My Projects</a>
+    <section class="hero bracket">
+        <p class="status-line"><span class="status-dot" aria-hidden="true"></span>~/zacharias · CS @ University of Manitoba</p>
+        <h2>Full-stack builds. <em>Systems-level</em> thinking.</h2>
+        <p>I design and build software end to end — from low-level systems in C and Kotlin, to data pipelines and ETL processes, to responsive front ends. Currently studying Computer Science at the University of Manitoba.</p>
+        <div class="hero-actions">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="details.html" class="btn-ghost">Full Specs</a>
+        </div>
     </section>
 
     <section id="about" class="about">
         <h2>About Me</h2>
-        <p> I’m currently pursuing a Computer Science degree at the University of Manitoba, where I’m developing expertise in full-stack development, data analysis, and system design. Over the years, I’ve worked on diverse projects involving both front-end and back-end technologies, honing my skills in SQL, Python, and creating scalable data architectures.
-            
-            My passion for problem-solving and innovation has driven me to explore cloud computing and streamline ETL (Extract, Transform, Load) processes, ensuring data accuracy and reliability. I enjoy building user-friendly, visually appealing websites, leveraging modern frameworks to deliver seamless experiences.
-        </p>
+        <div class="about-grid">
+            <p class="reveal">I’m currently pursuing a Computer Science degree at the University of Manitoba, where I’m developing expertise in full-stack development, data analysis, and system design. Over the years, I’ve worked on diverse projects involving both front-end and back-end technologies, honing my skills in SQL, Python, and creating scalable data architectures.
+                <br><br>
+                My passion for problem-solving and innovation has driven me to explore cloud computing and streamline ETL (Extract, Transform, Load) processes, ensuring data accuracy and reliability. I enjoy building user-friendly, visually appealing websites, leveraging modern frameworks to deliver seamless experiences.
+            </p>
+            <dl class="spec-list reveal">
+                <div><dt>Focus</dt><dd>Full-stack · Data · Systems</dd></div>
+                <div><dt>Core stack</dt><dd>Python · SQL · JS/TS</dd></div>
+                <div><dt>Systems</dt><dd>C · Kotlin</dd></div>
+                <div><dt>School</dt><dd>Univ. of Manitoba</dd></div>
+                <div><dt>Field</dt><dd>Computer Science</dd></div>
+            </dl>
+        </div>
     </section>
 
     <section id="projects" class="projects">
         <h2>My Projects</h2>
         <div class="project-container">
-            <div class="project-card">
-                <img src="Assets/img/how2games.png" alt="How2Games Project">
+            <article class="project-card bracket reveal">
+                <div class="card-media">
+                    <img src="Assets/img/how2games.jpg" alt="How2Games homepage listing trending games" loading="lazy">
+                    <span class="card-index">01</span>
+                </div>
+                <div class="card-tags"><span>Web</span><span>API</span></div>
                 <h3><a href="https://github.com/Bearium-BB/How2Games">How2Games</a></h3>
                 <p>A gaming API-powered platform designed to provide comprehensive information about various games.</p>
-                <button class="project-toggle" type="button">Learn more</button>
+                <button class="project-toggle" type="button" aria-expanded="false">Learn more</button>
                 <div class="project-details">
                     <p>How2Games integrates live game metadata from external APIs into a responsive interface, including cover art, release dates, and summary cards. I built the data-fetching layer and polished the layout for easy browsing.</p>
                 </div>
-            </div>
-            <div class="project-card">
-                <img src="Assets/img/dev-team.png" alt="Dev Team Project">
+            </article>
+            <article class="project-card bracket reveal">
+                <div class="card-media">
+                    <img src="Assets/img/dev-team.jpg" alt="DevTeam collaborative blog homepage" loading="lazy">
+                    <span class="card-index">02</span>
+                </div>
+                <div class="card-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
                 <h3><a href="https://github.com/Zack-Z23/Dev-Team">DevTeam</a></h3>
                 <p>Developed a responsive website with some colleagues as a project.</p>
-                <button class="project-toggle" type="button">Learn more</button>
+                <button class="project-toggle" type="button" aria-expanded="false">Learn more</button>
                 <div class="project-details">
                     <p>DevTeam is a collaborative portfolio site that highlights team roles, project milestones, and polished UI responsiveness. I focused on layout design, mobile-first structure, and accessibility improvements.</p>
                 </div>
-            </div>
-            <div class="project-card">
-                <img src="Assets/img/api-generator.png" alt="Fast API Generator">
+            </article>
+            <article class="project-card bracket reveal">
+                <div class="card-media">
+                    <img src="Assets/img/api-generator.jpg" alt="Website Analysis Chatbot interface" loading="lazy">
+                    <span class="card-index">03</span>
+                </div>
+                <div class="card-tags"><span>Python</span><span>Web scraping</span></div>
                 <h3><a href="https://github.com/Zack-Z23/Website-Analysis-Chatbot">Fast API Generator</a></h3>
                 <p>A Python-based tool that dynamically generates questions from web-scraped content.</p>
-                <button class="project-toggle" type="button">Learn more</button>
+                <button class="project-toggle" type="button" aria-expanded="false">Learn more</button>
                 <div class="project-details">
                     <p>The Fast API Generator combines web scraping with AI prompt generation to create structured questions from article content. I handled the back-end logic, data parsing, and API endpoint design.</p>
                 </div>
-            </div>
-            <div class="project-card">
-                <img src="Assets/img/Codecrafters-Build-Your-Own-Redis-Kotlin.png" alt="Redis Project">
+            </article>
+            <article class="project-card bracket reveal">
+                <div class="card-media">
+                    <img src="Assets/img/Codecrafters-Build-Your-Own-Redis-Kotlin.png" alt="Redis project logo" loading="lazy">
+                    <span class="card-index">04</span>
+                </div>
+                <div class="card-tags"><span>Kotlin</span><span>Systems</span></div>
                 <h3><a href="https://github.com/Zack-Z23/codecrafters-kotlin">Codecrafters, Build your own Redis in Kotlin</a></h3>
                 <p>A Kotlin-based project that implements a simplified version of Redis.</p>
-                <button class="project-toggle" type="button">Learn more</button>
+                <button class="project-toggle" type="button" aria-expanded="false">Learn more</button>
                 <div class="project-details">
                     <p>This project simulates a Redis key-value store using Kotlin, including command parsing, persistence, and basic networking behavior. It demonstrates system thinking and low-level JVM design.</p>
                 </div>
-            </div>
-            <div class="project-card">
-                <img src="Assets/img/Codecrafters-Build-You-Own-Shell-C.png" alt="C Project">
+            </article>
+            <article class="project-card bracket reveal">
+                <div class="card-media">
+                    <img src="Assets/img/Codecrafters-Build-You-Own-Shell-C.png" alt="Shell project logo" loading="lazy">
+                    <span class="card-index">05</span>
+                </div>
+                <div class="card-tags"><span>C</span><span>Systems</span></div>
                 <h3><a href="https://github.com/Zack-Z23/codecrafters-shell-c">Codecrafters, Build your own Shell in C</a></h3>
                 <p>A C-based shell project that demonstrates my proficiency in low-level programming and system design.</p>
-                <button class="project-toggle" type="button">Learn more</button>
+                <button class="project-toggle" type="button" aria-expanded="false">Learn more</button>
                 <div class="project-details">
                     <p>The shell project implements command execution, file handling, and process control in C. It showcases my understanding of operating system concepts and CLI design.</p>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
     <section id="contact" class="about">
         <h2>Contact Me</h2>
         <p>
-            Feel free to reach out if you're interested in collaborating or learning more about my work. You can contact me via <a href="mailto:zack.zacharidis@gmail.com">email</a> or connect with me on <a href="https://www.linkedin.com/in/zacharias-zachariadis-26a1a7238/" target="_blank">LinkedIn</a>.
+            Feel free to reach out if you're interested in collaborating or learning more about my work.
         </p>
+        <div class="contact-links">
+            <a href="mailto:zack.zacharidis@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/zacharias-zachariadis-26a1a7238/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
     </section>
     <footer>
         <p>&copy; 2026 Zacharias Zachariadis. Built with passion and dedication.</p>
     </footer>
 
-    <script src="Assets/script.js"></script>
+    <script src="Assets/script.js?v=2"></script>
 </body>
 
 </html> 
