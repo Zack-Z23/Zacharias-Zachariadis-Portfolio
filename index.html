@@ -10,36 +10,56 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <h1 class="logo">Zacharias Zachariadis</h1>
-            <div class="menu-toggle">
-                <button class="hamburger" onclick="toggleMenu()" aria-label="Menu Toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-            <nav class="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="details.html" class="nav-link">More</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<header>
+  <div class="header-container">
+    <h1 class="logo">Zacharias Zachariadis</h1>
+    <div class="menu-toggle">
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu Toggle"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="nav-menu">
+      <ul class="nav-list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="details.html" class="nav-link">More</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="https://github.com/Zack-Z23" class="btn-ghost">GitHub</a>
+      <a href="#contact" class="btn-primary">Get in touch</a>
+    </div>
+  </div>
+</header>
     
-    <section class="hero bracket">
-        <p class="status-line"><span class="status-dot" aria-hidden="true"></span>~/zacharias · CS @ University of Manitoba</p>
-        <h2>Full-stack builds. <em>Systems-level</em> thinking.</h2>
-        <p>I design and build software end to end — from low-level systems in C and Kotlin, to data pipelines and ETL processes, to responsive front ends. Currently studying Computer Science at the University of Manitoba.</p>
-        <div class="hero-actions">
-            <a href="#projects" class="btn-primary">View Projects</a>
-            <a href="details.html" class="btn-ghost">Full Specs</a>
-        </div>
-    </section>
+  <section class="hero hero-split">
+  <div class="hero-copy">
+    <p class="status-line"><span class="status-dot"></span>CS student at the University of Manitoba</p>
+    <h2>Never let a good build <em>go unshipped.</em></h2>
+    <p>I design and build software end to end, from low-level systems in C and Kotlin to data pipelines and responsive front ends.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">View projects</a>
+      <a href="details.html" class="btn-ghost">Full specs</a>
+    </div>
+  </div>
+
+  <div class="hero-visual" aria-hidden="true">
+    <svg viewBox="0 0 600 480" preserveAspectRatio="none">
+      <path d="M150 250 C 200 200, 220 120, 280 100"/>
+      <path d="M150 300 C 220 340, 240 340, 290 330"/>
+      <path d="M430 110 C 500 100, 500 160, 520 190"/>
+      <path d="M430 320 C 500 320, 500 260, 520 230"/>
+    </svg>
+    <div class="node node-brief"><h4>Brief</h4>Full-stack web apps with real API integration.</div>
+    <div class="node node-stack"><h4>Stack</h4><div class="chips"><span>Python</span><span>SQL</span><span>TypeScript</span></div></div>
+    <div class="node node-hot"><h4>Systems</h4><div class="chips"><span>C</span><span>Kotlin</span><span>Rust</span></div></div>
+    <div class="node node-out"><h4>Output</h4>5 shipped projects</div>
+  </div>
+
+  <div class="stack-row">
+    <span>Built with:</span>
+    <strong>Python</strong><strong>Kotlin</strong><strong>C</strong><strong>JavaScript</strong>
+  </div>
+</section>
 
     <section id="about" class="about">
         <h2>About Me</h2>
