@@ -116,10 +116,12 @@ header {
 .hero-split { display: grid; grid-template-columns: 1fr 1.15fr; align-items: center; gap: 2rem; }
 .hero-copy { display: flex; flex-direction: column; align-items: flex-start; }
 
-.status-line {
+.hero .status-line {
     display: inline-flex; align-items: center; gap: 8px;
-    padding: 6px 14px; margin-bottom: 1.75rem;
-    font-size: 12px; color: var(--text);
+    padding: 6px 14px; 
+    margin-bottom: 1.5rem; 
+    font-size: 16px;
+    color: var(--muted);
     background: #ffffff0a; border: 1px solid var(--border); border-radius: 999px;
 }
 .status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent2); box-shadow: 0 0 8px var(--accent); flex-shrink: 0; }
