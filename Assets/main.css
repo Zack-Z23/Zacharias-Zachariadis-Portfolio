@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); }
+html { scroll-behavior: smooth; font-family: 'Inter', system-ui, 'Times New Roman'; background: var(--bg); color: var(--text); }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 :root {
@@ -17,8 +17,8 @@ html { scroll-behavior: smooth; font-family: 'Inter', system-ui, sans-serif; bac
     --accent2: #ff7d3f;
     --accent-dim: #ff5a1f33;
     --accent-ink: #fff;
-    --sans: 'Inter', system-ui, sans-serif;
-    --serif: 'Instrument Serif', Georgia, serif;
+    --sans: 'Inter', system-ui, 'Times New Roman', sans-serif;
+    --serif: 'Instrument Serif', serif;
     --content: 1160px;
     --header-h: 72px;
 }
