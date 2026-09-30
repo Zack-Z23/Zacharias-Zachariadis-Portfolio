@@ -3,6 +3,7 @@
     --bg: #f4f2ee; --bg2: #ffffff; --bg3: #ebe8e1;
     --border: #14141418; --border2: #14141430;
     --ink: #141414; --text: #3d3d40; --muted: #77767a;
+    --sans: 'Times New Roman', Times, serif; --serif: 'Times New Roman', Times, serif;
     --accent: #d9522b; --accent2: #e8703f; --accent-dim: #d9522b1f;
 }
 header { background: #f4f2eecc; }
@@ -67,3 +68,9 @@ body.locked { overflow: hidden; }
     .viewer-nav { justify-content: flex-start; }
     .cursor-pill { display: none; }
 }
+
+/* font: Times New Roman everywhere */
+html, body, button, input, textarea, .viewer-nav button, .viewer-close, .viewer-link {
+    font-family: 'Times New Roman', Times, serif;
+}
+.hero h2, .about h2, #contact h2, .projects h2 { font-family: 'Times New Roman', Times, serif; }
